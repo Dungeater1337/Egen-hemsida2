@@ -1,0 +1,26 @@
+body{
+    background-color:gray; 
+}
+
+h1:nth-child(1){
+    color: blue; 
+    text-decoration: underline; 
+}
+
+h2{
+    color: blue;
+    text-align:center;
+    font-size: 200%;
+}
+
+p{
+text-align: center; 
+color:blue;
+font-size:large;
+font-style: Italic;
+}
+
+.bild{
+width: 500px;
+height: auto; 
+}
