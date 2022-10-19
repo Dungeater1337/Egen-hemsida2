@@ -1,28 +1,26 @@
 
 body{
-    background-color: khaki; 
+    background-color: rgb(153, 181, 209); 
 }
 
 .wrapper{
     width: 95%;
     margin: 0 auto;
-    background-color: coral;
+    background-color: lightblue;
     text-align:center; 
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 3fr;
+    grid-template-rows: 100px 50px auto;
     grid-gap: 15px;
     grid-template-areas:
     "header header"
-    "nav nav";
+    "nav nav"
+    "main main";
 }
 
-h1:nth-child(1){
-    text-align:center; 
-    color: black;  
+header{
+    grid-area: header;
 }
-
-
 
 h2{
     color: black;
@@ -32,7 +30,6 @@ h2{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-
 p{
 text-align: center; 
 color:black;
@@ -40,7 +37,7 @@ font-size:large;
 font-style: Italic;
 }
 
-.bild{
+.bild2{
 width: 450px;
 height: auto; 
 display: block;
@@ -56,6 +53,9 @@ th{
     color: black;
 }
 
+nav{
+ grid-area: nav;
+}
 
 nav>ul{
     display: grid;
@@ -65,18 +65,32 @@ nav>ul{
     height: 100%;
 }
 
-
-
-
 nav li{
     list-style-type: none;
     text-align: center;
+    border: 1px solid black;
+    font-size: 2em;
+    background-color: rgb(128, 128, 230);
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: nones;
+
 }
-
-
-
 
 table{
     display:block
 }
 
+main{
+    grid-area: main;
+}
+
+a{
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.f{
+    font-family:Arial, Helvetica, sans-serif
+}
