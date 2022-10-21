@@ -1,29 +1,29 @@
 
 body{
-    background-color: rgb(153, 181, 209); 
+    background-color: rgb(43, 47, 51); 
 }
 
 .wrapper{
     width: 95%;
     margin: 0 auto;
-    background-color: lightblue;
+    background-color: rgb(55, 56, 56);
     text-align:center; 
     display: grid;
-    grid-template-columns: 3fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 100px 50px auto;
     grid-gap: 15px;
     grid-template-areas:
-    "header header"
-    "nav nav"
-    "main main";
+    "header"
+    "nav"
+    "main";
 }
 
 header{
-    grid-area: header;
+    grid-area: header; 
 }
 
 h2{
-    color: black;
+    color: rgba(17, 17, 37, 0.753);
     text-align:center;
     font-size: 200%;
     text-decoration:underline;
@@ -32,7 +32,7 @@ h2{
 
 p{
 text-align: center; 
-color:black;
+color:rgb(224, 214, 214);
 font-size:large;
 font-style: Italic;
 }
@@ -43,14 +43,15 @@ height: auto;
 display: block;
 margin-left: auto;
 margin-right: auto;
+border-radius: 55px;
 }
 
 h1{
-    color: black;
+    color: rgb(17, 22, 49);
 }
 
 th{
-    color: black;
+    color: rgb(37, 12, 105);
 }
 
 nav{
@@ -70,20 +71,27 @@ nav li{
     text-align: center;
     border: 1px solid black;
     font-size: 2em;
-    background-color: rgb(128, 128, 230);
+    background-color: rgb(36, 36, 41);
     border-radius: 20px;
     margin-right: 10px;
     margin-left: 10px;
     text-decoration: nones;
 }
 
-table{
-    display:block
+li a{
+    color:rgb(41, 12, 143);
 }
+
 
 main{
     grid-area: main;
 }
+
+#sida3 main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 a{
     text-decoration: none;
@@ -102,13 +110,30 @@ table, th, td{
     width: 600px;
 }
 
-th{
-    color: crimson;
-    background-color: rgb(24, 24, 24);
+
+
+tr:nth-child(even){
+    background-color: rgb(60, 66, 156);
 }
 
-td{
-    color: blue;
-    background-color: azure;
+tr{
+    background-color: rgb(33, 51, 66);
 }
+
+section{
+    background-color: rgb(45, 45, 48);
+}
+
+main{
+    background-color: rgb(37, 39, 39);
+}
+
+.section2{
+    background-color: rgb(42, 41, 46);
+}
+
+#sida3 section:first-of-type{
+    grid-column: 1/span 2;
+}
+
 
