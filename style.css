@@ -136,4 +136,13 @@ main{
     grid-column: 1/span 2;
 }
 
-
+.lista2{
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(39, 39, 78);
+    text-decoration:underline;
+}
+.sista{
+    grid-area: 
+}
