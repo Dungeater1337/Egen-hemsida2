@@ -1,6 +1,6 @@
 
 body{
-    background-color: rgb(43, 47, 51); 
+    background-color: rgb(43, 47, 51);    
 }
 
 .wrapper{
@@ -144,5 +144,5 @@ main{
     text-decoration:underline;
 }
 .sista{
-    grid-area: 
+    grid-column:1/span 2;
 }
